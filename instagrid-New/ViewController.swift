@@ -12,7 +12,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var bouttonPlusView: UIView!
     @IBOutlet var bouttonPlusImage: [UIButton]!
     @IBOutlet weak var swipeToShareStack: UIStackView!
-    
+    @IBOutlet weak var formStackView: UIStackView!
     @IBOutlet var formBttons: [UIButton]!
     private var swipeGestureRecognizer : UISwipeGestureRecognizer?
     

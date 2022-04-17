@@ -24,14 +24,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ght-r9-Fby" userLabel="bouttonPlusView">
                                 <rect key="frame" x="46" y="307" width="322" height="282"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6eF-BB-vi3">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6eF-BB-vi3">
                                         <rect key="frame" x="15" y="15" width="292" height="252"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6pN-FK-ise">
-                                                <rect key="frame" x="0.0" y="0.0" width="292" height="118.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6pN-FK-ise">
+                                                <rect key="frame" x="0.0" y="0.0" width="292" height="121"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h36-qN-pWO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="138.5" height="118.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="141" height="121"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="Plus" title=""/>
@@ -40,27 +40,36 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fJ-Ur-K2Q">
-                                                        <rect key="frame" x="153.5" y="0.0" width="138.5" height="118.5"/>
+                                                        <rect key="frame" x="151" y="0.0" width="141" height="121"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="Plus" title=""/>
+                                                        <connections>
+                                                            <action selector="putPictures:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5CQ-eN-7bO"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bDY-KU-etK">
-                                                <rect key="frame" x="0.0" y="133.5" width="292" height="118.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bDY-KU-etK">
+                                                <rect key="frame" x="0.0" y="131" width="292" height="121"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5F-d5-ZlH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="138.5" height="118.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="141" height="121"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="Plus" title=""/>
+                                                        <connections>
+                                                            <action selector="putPictures:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cFa-ry-cDm"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ww2-U6-8Vp">
-                                                        <rect key="frame" x="153.5" y="0.0" width="138.5" height="118.5"/>
+                                                        <rect key="frame" x="151" y="0.0" width="141" height="121"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="Plus" title=""/>
+                                                        <connections>
+                                                            <action selector="putPictures:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IsL-tS-CKu"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -169,6 +178,7 @@
                     </view>
                     <connections>
                         <outlet property="bouttonPlusView" destination="Ght-r9-Fby" id="IW4-Iv-n6O"/>
+                        <outlet property="formStackView" destination="Txa-vP-qn1" id="jaG-q1-XON"/>
                         <outlet property="swipeToShareStack" destination="SG9-Rh-y8x" id="9RZ-lv-T9f"/>
                         <outletCollection property="bouttonPlusImage" destination="h36-qN-pWO" collectionClass="NSMutableArray" id="ETU-bO-SWa"/>
                         <outletCollection property="bouttonPlusImage" destination="5fJ-Ur-K2Q" collectionClass="NSMutableArray" id="fnC-RW-M3D"/>
