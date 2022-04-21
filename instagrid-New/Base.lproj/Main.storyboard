@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ght-r9-Fby" userLabel="bouttonPlusView">
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ght-r9-Fby" userLabel="bouttonPlusView">
                                 <rect key="frame" x="34" y="281" width="322" height="282"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6eF-BB-vi3">
@@ -30,20 +30,22 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6pN-FK-ise">
                                                 <rect key="frame" x="0.0" y="0.0" width="292" height="118.66666666666667"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h36-qN-pWO" userLabel="Button 1">
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h36-qN-pWO" userLabel="Button 1">
                                                         <rect key="frame" x="0.0" y="0.0" width="138.66666666666666" height="118.66666666666667"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="Plus" title=""/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="" image="Plus">
+                                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="putPictures:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndf-Sc-4jx"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fJ-Ur-K2Q" userLabel="Button 2">
+                                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fJ-Ur-K2Q" userLabel="Button 2">
                                                         <rect key="frame" x="153.66666666666663" y="0.0" width="138.33333333333337" height="118.66666666666667"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="Plus" title=""/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="" image="Plus"/>
                                                         <connections>
                                                             <action selector="putPictures:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5CQ-eN-7bO"/>
                                                         </connections>
@@ -53,20 +55,20 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bDY-KU-etK">
                                                 <rect key="frame" x="0.0" y="133.66666666666669" width="292" height="118.33333333333331"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5F-d5-ZlH" userLabel="Button 3">
+                                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5F-d5-ZlH" userLabel="Button 3">
                                                         <rect key="frame" x="0.0" y="0.0" width="138.66666666666666" height="118.33333333333333"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="Plus" title=""/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="" image="Plus"/>
                                                         <connections>
                                                             <action selector="putPictures:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cFa-ry-cDm"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ww2-U6-8Vp" userLabel="Button 4">
+                                                    <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ww2-U6-8Vp" userLabel="Button 4">
                                                         <rect key="frame" x="153.66666666666663" y="0.0" width="138.33333333333337" height="118.33333333333333"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="Plus" title=""/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="" image="Plus"/>
                                                         <connections>
                                                             <action selector="putPictures:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IsL-tS-CKu"/>
                                                         </connections>
@@ -89,28 +91,28 @@
                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="Txa-vP-qn1">
                                 <rect key="frame" x="20" y="700" width="340" height="90"/>
                                 <subviews>
-                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMz-2t-upq">
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMz-2t-upq">
                                         <rect key="frame" x="0.0" y="0.0" width="82.666666666666671" height="90"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="" backgroundImage="Layout 1"/>
+                                        <state key="normal" backgroundImage="Layout 1"/>
                                         <connections>
-                                            <action selector="form:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AI8-db-bgJ"/>
+                                            <action selector="formBoutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N2k-Hc-Q3Z"/>
                                         </connections>
                                     </button>
-                                    <button tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91t-mQ-lXS">
+                                    <button tag="1" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91t-mQ-lXS">
                                         <rect key="frame" x="128.66666666666666" y="0.0" width="82.666666666666657" height="90"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="" image="Selected" backgroundImage="Layout 2"/>
+                                        <state key="normal" title="" image="Layout 2" backgroundImage="Layout 2"/>
                                         <connections>
-                                            <action selector="form:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WhR-uJ-h01"/>
+                                            <action selector="formBoutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ard-F5-U1x"/>
                                         </connections>
                                     </button>
-                                    <button tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCy-Ue-ejg">
+                                    <button tag="2" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCy-Ue-ejg">
                                         <rect key="frame" x="257.33333333333331" y="0.0" width="82.666666666666686" height="90"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="" backgroundImage="Layout 3"/>
                                         <connections>
-                                            <action selector="form:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mwk-O7-PqF"/>
+                                            <action selector="formBoutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zgX-Sy-z8D"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -146,9 +148,6 @@
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=compact" hidden="YES"/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="vkT-QE-ayQ" appends="YES" id="TiO-m0-y8i"/>
-                                        </connections>
                                     </label>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe left to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6a-fY-oAs">
                                         <rect key="frame" x="0.0" y="49.333333333333343" width="152" height="0.0"/>
@@ -219,7 +218,6 @@
         <image name="Layout 2" width="80" height="80"/>
         <image name="Layout 3" width="80" height="80"/>
         <image name="Plus" width="40" height="40"/>
-        <image name="Selected" width="80" height="80"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

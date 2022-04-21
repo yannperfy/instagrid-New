@@ -77,9 +77,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     
     
 
-    
-    
-    @IBAction func form(_ sender: UIButton) {
+    @IBAction func formBoutton(_ sender: UIButton) {
         formBttons.forEach { $0.isSelected = false }
         sender.isSelected = true
         switch sender.tag {
@@ -96,7 +94,9 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             break
         }
     }
+    
 
+    
     @IBAction func putPictures(_ sender: UIButton) {
         indexButtons = sender.tag
         showImagePickerController()
