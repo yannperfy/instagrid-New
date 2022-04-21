@@ -11,7 +11,7 @@ import UIKit
 
 extension ViewController: UIImagePickerControllerDelegate {
     
-// Methods to pick photos from library
+// sellectionner les images dan la gallerie
     
     func showImagePickerController() {
         imagePickerController.allowsEditing = true

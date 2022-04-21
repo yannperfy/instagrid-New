@@ -10,11 +10,16 @@ import UIKit
 class ViewController: UIViewController, UINavigationControllerDelegate {
 
     @IBOutlet weak var bouttonPlusView: UIView!
-    @IBOutlet var bouttonPlusImage: [UIButton]!
     @IBOutlet weak var swipeToShareStack: UIStackView!
     @IBOutlet weak var formStackView: UIStackView!
+    @IBOutlet var bouttonPlusImage: [UIButton]!
     @IBOutlet var formBttons: [UIButton]!
+    
     private var swipeGestureRecognizer : UISwipeGestureRecognizer?
+    
+    
+    var indexButtons = Int()
+    let imagePickerController = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,9 +42,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         }
     }
     
-    var indexButtons = Int()
-    let imagePickerController = UIImagePickerController()
-    
+
     @objc func displayActivityController(_ sender: UIActivityItemSource) {
         print("ActivityController opened")
         let imageView = imageConvert(bouttonPlusView)
@@ -60,12 +63,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         }
     }
     
-
-    @IBAction func putPictures(_ sender: UIButton) {
-        indexButtons = sender.tag
-        showImagePickerController()
-    }
-    
     // Method in order to convert UIview as UImage
     func imageConvert(_ view: UIView) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.isOpaque, 0.0)
@@ -77,6 +74,10 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         }
         return nil
     }
+    
+    
+
+    
     
     @IBAction func form(_ sender: UIButton) {
         formBttons.forEach { $0.isSelected = false }
@@ -95,7 +96,14 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             break
         }
     }
-    // Gridview & Swipe label disappear
+
+    @IBAction func putPictures(_ sender: UIButton) {
+        indexButtons = sender.tag
+        showImagePickerController()
+    }
+    
+    
+    
     func shareView () {
         if UIDevice.current.orientation.isLandscape {
             let screenWidth = UIScreen.main.bounds.width

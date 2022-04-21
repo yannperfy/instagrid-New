@@ -302,6 +302,8 @@
 				DEVELOPMENT_TEAM = ZD87C2Z59S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "instagrid-New/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "acess camera";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "acess photo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +319,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -331,6 +333,8 @@
 				DEVELOPMENT_TEAM = ZD87C2Z59S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "instagrid-New/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "acess camera";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "acess photo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -346,7 +350,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
