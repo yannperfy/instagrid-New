@@ -14,6 +14,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var formStackView: UIStackView!
     @IBOutlet var bouttonPlusImage: [UIButton]!
     @IBOutlet var formBttons: [UIButton]!
+    @IBOutlet weak var bouttonForm1: UIButton!
+    @IBOutlet weak var bouttonForm2: UIButton!
+    @IBOutlet weak var bouttonForm3: UIButton!
+    
+    
     
     private var swipeGestureRecognizer : UISwipeGestureRecognizer?
     
@@ -23,8 +28,13 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imagePickerController.delegate = self
+        bouttonPlusView.layer.cornerRadius = 15
+        bouttonForm1.layer.cornerRadius = 6
+        bouttonForm2.layer.cornerRadius = 6
+        bouttonForm3.layer.cornerRadius = 6
         
+        
+        imagePickerController.delegate = self
         swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(displayActivityController(_:)))
         
         NotificationCenter.default.addObserver(self, selector: #selector(setupSwipeDirection), name:UIDevice.orientationDidChangeNotification,object: nil)

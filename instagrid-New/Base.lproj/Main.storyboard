@@ -91,7 +91,7 @@
                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="Txa-vP-qn1">
                                 <rect key="frame" x="20" y="700" width="340" height="90"/>
                                 <subviews>
-                                    <button contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMz-2t-upq">
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMz-2t-upq" userLabel="bouttonForm1">
                                         <rect key="frame" x="0.0" y="0.0" width="82.666666666666671" height="90"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="Layout 1"/>
@@ -99,7 +99,7 @@
                                             <action selector="formBoutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N2k-Hc-Q3Z"/>
                                         </connections>
                                     </button>
-                                    <button tag="1" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91t-mQ-lXS">
+                                    <button tag="1" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91t-mQ-lXS" userLabel="bouttonForm2">
                                         <rect key="frame" x="128.66666666666666" y="0.0" width="82.666666666666657" height="90"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="" image="Layout 2" backgroundImage="Layout 2"/>
@@ -107,7 +107,7 @@
                                             <action selector="formBoutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ard-F5-U1x"/>
                                         </connections>
                                     </button>
-                                    <button tag="2" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCy-Ue-ejg">
+                                    <button tag="2" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCy-Ue-ejg" userLabel="bouttonForm3">
                                         <rect key="frame" x="257.33333333333331" y="0.0" width="82.666666666666686" height="90"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="" backgroundImage="Layout 3"/>
@@ -192,6 +192,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bouttonForm1" destination="UMz-2t-upq" id="Ea7-Iv-ajN"/>
+                        <outlet property="bouttonForm2" destination="91t-mQ-lXS" id="sip-Js-NOM"/>
+                        <outlet property="bouttonForm3" destination="fCy-Ue-ejg" id="h2J-sm-SQi"/>
                         <outlet property="bouttonPlusView" destination="Ght-r9-Fby" id="IW4-Iv-n6O"/>
                         <outlet property="formStackView" destination="Txa-vP-qn1" id="jaG-q1-XON"/>
                         <outlet property="swipeToShareStack" destination="SG9-Rh-y8x" id="9RZ-lv-T9f"/>
