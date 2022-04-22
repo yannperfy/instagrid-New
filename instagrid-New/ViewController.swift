@@ -29,9 +29,9 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         bouttonPlusView.layer.cornerRadius = 15
-        bouttonForm1.layer.cornerRadius = 6
-        bouttonForm2.layer.cornerRadius = 6
-        bouttonForm3.layer.cornerRadius = 6
+        bouttonForm1.layer.cornerRadius = 7
+        bouttonForm2.layer.cornerRadius = 7
+        bouttonForm3.layer.cornerRadius = 7
         
         
         imagePickerController.delegate = self
